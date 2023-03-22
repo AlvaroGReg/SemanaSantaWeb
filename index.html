@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+
+<body class="mainbody">
+
+    <div class="title">
+        <h1 class="titletext">SEMANA SANTA BENAVENTE</h1>
+    </div>
+
+
+
+    <div class="albumcontainer">
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next right" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="galleryframe">
+            <div class="framelateral frameimgleft">
+                <img src="" class="galleryimg" id="imgleft" onclick="opengallery('imgleft')">
+            </div>
+                <div class="frameimgcenter">
+                    <img src="" class="galleryimg" id="imgcenter" onclick="opengallery('imgcenter')">
+                </div>
+
+                <div class="framelateral frameimgright">
+                    <img src="" class="galleryimg" id="imgright" onclick="opengallery('imgright')">
+                </div>
+            
+        </div>
+    </div>
+    <div class="topbuttonsdiv">
+        <table class="tablemenu">
+            <tr class="tablerow">
+                <td class="cellbtnday">
+                    <button class="button btnday" title="previos">Días previos</button>
+                </td>
+                <td class="cellbtnday">
+                    <button class="button btnday" title="martes">Martes Santo</button>
+                </td>
+                <td class="cellbtnday">
+                    <button class="button btnday" title="miercoles">Miércoles Santo</button>
+                </td>
+
+            </tr>
+            <tr class="tablerow">
+                <td class="cellbtnday">
+                    <button title="jueves" class="button btnday">Jueves Santo</button>
+                </td>
+                <td class="cellbtnday">
+                    <button title="viernes" class="button btnday">Viernes Santo</button>
+                </td>
+                <td class="cellbtnday">
+                    <button title="domingo" class="button btnday">Domingo de resurrección</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="bottomframe">
+
+        <div class="procesionesheader">
+        <p class="daytitle" id="daytitle">Procesiones del lunes: </p>
+        <p class="dayliprocesiones" id="dayliprocesiones"></p>
+        </div>
+
+        <div class="cofradiabtnsframe">
+            <p class="cofradiastitle">Cofradías que participan:</p>
+
+            <ul class="listcofradias" id="listcofradias">
+
+            </ul>
+
+        </div>
+
+        <div class="cofradiabody">
+            <div class="cofradiatxtbody">
+                <p class="cofradiatxt cofradianame" id="cofradianame"></p>
+                <p class="cofradiatxt" id="cofradiafundation"></p>
+                <p class="cofradiatxt" id="cofradiapresident"></p>
+                <p class="cofradiatxt" id="cofradiabrothers"></p>
+                <p class="cofradiatxt" id="cofradiasteps"></p>
+                <a href="" class="cofradiatxt" id="cofradiaurl" target="_blank"></a>
+
+            </div>
+
+            <div class="youtubeframe">
+                <iframe src="" id="iframevideo" class="iframevideo" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="galleryopen" id="galleryopen" onclick="closegallery()">
+        <img src="" id="galleryopenimg"alt="">
+
+    </div>
+</body>
+<script src="js/album.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</html>

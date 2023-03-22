@@ -1,0 +1,271 @@
+:root{
+    --background-color : #00aba2;
+    --font-color : #000;
+    --shadow : #0000005c;
+    --primary : #8c7c00;
+    --accent : #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    cursor: pointer;
+  
+}
+
+p{
+    font-size: 1em;
+    color: var(--font-color);
+}
+
+/*TOP*/
+.mainbody {
+    background-color: var(--background-color);
+}
+
+.title {
+    margin: auto;
+    white-space: nowrap;
+    font-size: .9em;
+    text-align: center;
+}
+
+.topbuttonsdiv {
+    position: sticky;
+    width: 90vw;
+    margin: auto;
+    top: 2ex;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+}
+
+.cellbtnday{
+    width: 25%;
+    height: 100%;
+    margin: auto;
+}
+
+.btnday {
+    display: block;
+    background-color: var(--primary);
+    border: none;
+    color: var(--accent);
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    width: 100%;
+    height: 5ex;
+    max-width: 120px;
+}
+
+
+.titletext {}
+
+/* GALLERY */
+.albumcontainer {
+    position: relative;
+    margin: auto;
+    margin-top: 1.5ex;
+    width: 60vw;
+    height: 45ex;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    color: var(--font-color);
+    background-color: var(--shadow);
+    font-weight: bold;
+    user-select: none;
+    -webkit-user-select: none;
+    z-index: 3;
+
+    font-size: 2em;
+    padding: .5ex;
+    max-height: 1.5em;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.next {
+    right: 0;
+}
+
+.galleryframe {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--shadow);
+}
+
+.frameimgcenter {
+    position: absolute;
+    width: 90%;
+    z-index: 2;
+    max-height: 90%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.framelateral{
+    position: absolute;
+    width: 30%;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: .4;
+}
+
+.frameimgright {
+    right: 0;
+}
+
+.galleryimg {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    margin:auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+/*OPEN GALLERY*/
+
+.galleryopen{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--shadow);
+    z-index: 10;
+    justify-content: center;
+    align-items:center;
+}
+
+.galleryopen img{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*BOTTOM FRAME*/
+
+.listcofradias{
+    margin: auto;
+    margin-top: 2ex;
+    display: flex;
+}
+.cofradiadiv{}
+
+.cofradianametxt{
+
+    font
+}
+
+.cofradialogo{
+    width: 20ex;
+}
+
+.bottomframe {
+    width: 90%;
+    margin: auto;
+    margin-top: 2ex;
+    text-align: center;
+}
+
+.daytitle{
+    font-size: 1.1em;
+}
+
+.dayliprocesiones{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.cofradiabtnsframe {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1ex;
+    margin-bottom: 1ex;
+}
+
+
+.cofradiastitle{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1em;
+}
+
+.listbtnscofradia {
+    width: 80%;
+    background-color: #8c7c00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btncofradia {
+    font-size: 1.1em;
+    border: 0;
+    width: 100%;
+
+}
+
+.btncofradia:hover{
+    
+}
+
+.cofradiabody {
+    margin-top: 2ex;
+}
+
+.cofradiatxt {
+    font-size: 1.2em;
+}
+
+.cofradianame{
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 1ex;
+}
+
+.youtubeframe {
+    width: 80%;
+    margin: auto;
+    margin-top: 2ex;
+}
+
+.iframevideo {
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 760px) {
+
+
+}
+
+@media screen and (min-width: 761px) and (max-width: 1080px) {
+
+
+    }
